@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "next"
+  },
+  "dependencies": {
+    "next": "^1.2.3"
+  }
+}
