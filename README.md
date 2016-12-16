@@ -29,6 +29,15 @@ the file within the `pages` folder maps directly to the route. So if you want
 to have an "about" page on `/about` simply create `/pages/about.js` returning
 another React component.
 
+## Use React components
+
+All files in `pages` are considered as pages with routes, but nothing stops you
+from creating other components outside this folder to make them reusable. So
+for a navigation you can create a new `components` folder and add a
+`Navigation.js` file containing a React component displaying the navigation.
+And this component can make use of another component, e.g. `NavigationItem.js`,
+to render the single items of the navigation.
+
 ## Literature
 
 * <https://github.com/zeit/next.js>
