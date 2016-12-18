@@ -1,4 +1,5 @@
 import React from 'react';
+import css from 'next/css';
 import NavigationItem from './NavigationItem';
 
 const navigation = [
@@ -12,8 +13,15 @@ const navigation = [
     }
 ];
 
+const style = css({
+    listStyleType: 'none',
+    margin: 0,
+    padding: 0,
+    textAlign: 'right'
+});
+
 export default () => <nav>
-    <ul>
+    <ul className={style}>
         { navigation.map(
             item => <NavigationItem
                 href={item.href}

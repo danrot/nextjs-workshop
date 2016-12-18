@@ -72,6 +72,23 @@ The current content of the `<head>` will be replaced with the content of the
 
 ## Styling
 
+Next.js uses [glamor](https://github.com/threepointone/glamor) for styling. It
+is already installed along with Next.js and can easily be used with the `css`
+function, after you have imported it from `next/css`:
+
+```javascript
+const aStyle = css({
+    color: '#000',
+    textDecoration: 'none'
+});
+
+const element = <a className={aStyle}>Link</a>;
+```
+
+Using the style as `className` attribute will return a random name which is
+also used in a CSS rule. This way there won't be any changes affecting styles
+from other components.
+
 ## Literature
 
 * <https://github.com/zeit/next.js>
