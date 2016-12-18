@@ -54,6 +54,24 @@ clicking on a `NavigationItem`, will not trigger a page refresh anymore.
 The page also doesn't have to load anything if the user accesses a page that
 has already been loaded in the same session previously.
 
+## Head side effects
+
+Since Next.js only reloads parts of the page, the `<head>` section of the HTML
+will stay untouched, although in most cases you want this section to be adapted
+based on the currently loaded page. That is what the `Head` component was built
+for. Import it from `next/head` and just add any child tags to this component:
+
+```javascript
+<Head>
+    <title>About</title>
+</Head>
+```
+
+The current content of the `<head>` will be replaced with the content of the
+`Head` component.
+
+## Styling
+
 ## Literature
 
 * <https://github.com/zeit/next.js>
