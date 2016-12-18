@@ -38,6 +38,22 @@ for a navigation you can create a new `components` folder and add a
 And this component can make use of another component, e.g. `NavigationItem.js`,
 to render the single items of the navigation.
 
+## Client-side routing
+
+Next.js also allows you to use client-side transition between routes. All you
+have to do is to use the `Link` tag. Import it from `next/link` and use it like
+this:
+
+```javascript
+<Link href="/about"><a>About</a></Link>
+```
+
+After doing this you will see that the transition between routes, e.g. when
+clicking on a `NavigationItem`, will not trigger a page refresh anymore.
+
+The page also doesn't have to load anything if the user accesses a page that
+has already been loaded in the same session previously.
+
 ## Literature
 
 * <https://github.com/zeit/next.js>
