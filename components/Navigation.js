@@ -10,6 +10,10 @@ const navigation = [
     {
         href: '/about',
         content: 'About'
+    },
+    {
+        href: '/random',
+        content: 'Random'
     }
 ];
 

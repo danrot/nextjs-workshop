@@ -89,6 +89,25 @@ Using the style as `className` attribute will return a random name which is
 also used in a CSS rule. This way there won't be any changes affecting styles
 from other components.
 
+## Fetch data for props
+
+If you want to fetch data from a remote server there is the `getInitialProps`
+function on a React component. It is an `async` function, which means it can
+also do requests to gather data from remote servers.
+
+```javascript
+class extends React.Component {
+    static async getInitialProps() {
+        // get data
+
+        return data;
+    }
+}
+```
+
+The data returned from this function will be available via `this.props` as you
+know it from other React components.
+
 ## Literature
 
 * <https://github.com/zeit/next.js>
