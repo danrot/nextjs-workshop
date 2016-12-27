@@ -108,6 +108,16 @@ class extends React.Component {
 The data returned from this function will be available via `this.props` as you
 know it from other React components.
 
+## Build for production
+
+The last but not least important step is to build the website for production.
+Next.js comes with a build and start command, which must be configured in the
+`package.json` file. Afterwards you can run the `yarn run build` command to
+build the website ahead-of-time, and `yarn run start` for starting the
+webserver.
+
+This will also include minified versions of the javascript loaded from a CDN.
+
 ## Literature
 
 * <https://github.com/zeit/next.js>
